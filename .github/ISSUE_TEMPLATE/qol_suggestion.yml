@@ -1,0 +1,39 @@
+name: QOL / Feature Suggestion
+description: Suggest a usability improvement, polish change, or new idea for Cosmic Relay.
+title: "[QOL]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Cosmic Relay. Small usability ideas are especially valuable during alpha testing.
+  - type: input
+    id: version
+    attributes:
+      label: Cosmic Relay version
+      description: Example: v0.7.0-alpha.3
+      placeholder: v0.7.0-alpha.3
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you change or add?
+      description: Describe the improvement you would like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why would this improve the experience?
+      description: Explain the problem, friction, or use case this idea addresses.
+  - type: textarea
+    id: behavior
+    attributes:
+      label: How should it work?
+      description: If you have a preferred behavior or interaction, describe it here.
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Screenshots, mockups, examples, or anything else that may help.
