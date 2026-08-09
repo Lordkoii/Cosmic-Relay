@@ -37,6 +37,22 @@ Only download Cosmic Relay from releases published by **Lordkoii**.
 
 > Cosmic Relay is currently alpha software. Test builds may contain bugs or incomplete features. Because the application is not yet code-signed, Windows may display an unknown-publisher or security warning on some systems.
 
+### Windows first launch
+
+Because current alpha builds are not yet digitally code-signed, Windows may mark the downloaded ZIP or application as coming from the Internet.
+
+For the smoothest first launch:
+
+1. Download the ZIP from the official Cosmic Relay GitHub Release.
+2. Before extracting it, right-click the ZIP and select **Properties**.
+3. If an **Unblock** checkbox appears near the bottom of the Properties window, check it, select **Apply**, then **OK**.
+4. Extract the entire ZIP to a folder.
+5. Run `CosmicRelay.exe`.
+
+If Microsoft Defender SmartScreen displays **Windows protected your PC**, verify that you downloaded the file from the official **Lordkoii/Cosmic-Relay** release page and that the SHA-256 matches the value below. On systems where Windows offers the option, select **More info** and then **Run anyway**.
+
+This first-launch step is temporary while Cosmic Relay remains unsigned. Digitally signed builds are planned for a future release.
+
 ## Help test Cosmic Relay
 
 Feedback is welcome and is one of the main reasons this repository exists.
