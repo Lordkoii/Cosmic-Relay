@@ -1,0 +1,61 @@
+name: Bug Report
+description: Report something that is broken or behaving unexpectedly in Cosmic Relay.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing Cosmic Relay. Please include enough detail for the issue to be reproduced.
+  - type: input
+    id: version
+    attributes:
+      label: Cosmic Relay version
+      description: Example: v0.7.0-alpha.3
+      placeholder: v0.7.0-alpha.3
+    validations:
+      required: true
+  - type: dropdown
+    id: media_mode
+    attributes:
+      label: Media mode
+      options:
+        - AUTO
+        - WEB
+        - Other / Not sure
+    validations:
+      required: true
+  - type: input
+    id: media_source
+    attributes:
+      label: Media source / player
+      description: Example: YouTube in Firefox, YouTube in Chrome, Spotify, etc.
+      placeholder: YouTube in Firefox
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected to happen instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open Cosmic Relay
+        2. Start playback in ...
+        3. Set Media Session to ...
+        4. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment details
+      description: Windows version, monitor setup, browser/player version, or anything else that may matter.
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / additional context
+      description: Drag screenshots here or add any other useful details.
