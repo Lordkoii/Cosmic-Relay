@@ -25,11 +25,17 @@ Current testing areas include:
 
 ## Download
 
-The first public tester package for **v0.7.0-alpha.3** is being prepared.
+**v0.7.0-alpha.3 — Public Test Build is now available.**
 
-Once published, downloads will be available from the **Releases** section of this repository. Only download Cosmic Relay from releases published by **Lordkoii**.
+➡️ **[Download Cosmic Relay v0.7.0-alpha.3](https://github.com/Lordkoii/Cosmic-Relay/releases/tag/v0.7.0-alpha.3)**
 
-> Cosmic Relay is currently alpha software. Test builds may contain bugs or incomplete features.
+Download `Cosmic-Relay-v0.7.0-alpha.3-win-x64.zip` from the release assets, extract the entire ZIP to a folder, and run `CosmicRelay.exe`.
+
+This is a self-contained Windows x64 build, so a separate .NET installation should not be required.
+
+Only download Cosmic Relay from releases published by **Lordkoii**.
+
+> Cosmic Relay is currently alpha software. Test builds may contain bugs or incomplete features. Because the application is not yet code-signed, Windows may display an unknown-publisher or security warning on some systems.
 
 ## Help test Cosmic Relay
 
@@ -57,6 +63,12 @@ Highlights:
 - Improved monitor-edge window placement
 - Corrected close-button alignment
 - Release-protection and application ownership metadata
+
+## File verification
+
+SHA-256 for `Cosmic-Relay-v0.7.0-alpha.3-win-x64.zip`:
+
+`f701251eb6beb1021555f27128245788901b9a2378f5dbd6c84334f7e50471d6`
 
 ## License and distribution
 
