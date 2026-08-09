@@ -1,17 +1,17 @@
 # Cosmic Relay
 
-**A lightweight Windows media overlay for displaying currently playing media in a clean, customizable interface.**
+**A lightweight, customizable in-game media overlay built for Star Citizen.**
 
 > **Current status:** Alpha testing  
 > **Current tester version:** `v0.7.0-alpha.3`
 
-Cosmic Relay is currently in active development. This public repository is used for **tester downloads, release notes, bug reports, and quality-of-life feedback**.
+Cosmic Relay is an unofficial Star Citizen companion utility designed to keep currently playing media visible in a compact overlay while you stay in-game. This public repository is used for **tester downloads, release notes, bug reports, and quality-of-life feedback**.
 
 The application source code is maintained separately in a private repository and is **not distributed here**.
 
 ## What Cosmic Relay does
 
-Cosmic Relay provides a compact desktop overlay for currently playing media, with customizable layouts and media-detection behavior designed to stay out of the way while you work, browse, or play games.
+Cosmic Relay provides a compact media overlay intended for use while playing **Star Citizen**, with customizable layouts and media-detection behavior designed to blend into your gameplay setup without forcing you to constantly leave the game to check what's playing.
 
 Current testing areas include:
 
@@ -65,6 +65,10 @@ Cosmic Relay is **proprietary software**. It is not open source.
 Copyright © 2026 **Lordkoii**. All rights reserved.
 
 Tester builds are provided for personal, non-commercial evaluation and use under the terms in the repository's `LICENSE` file. Redistribution, resale, repackaging, or claiming Cosmic Relay as your own work is not permitted.
+
+## Star Citizen disclaimer
+
+Cosmic Relay is an independent, unofficial fan-made utility and is not affiliated with, endorsed by, or sponsored by Cloud Imperium Games or Roberts Space Industries. Star Citizen and related marks belong to their respective owners.
 
 ## Creator
 
