@@ -27,11 +27,11 @@
 
 <p align="center">
   <a href="https://github.com/Lordkoii/Cosmic-Relay/issues/new?template=bug_report.yml">
-    <img src="https://img.shields.io/badge/Report-a-Bug-f05d5e?style=flat-square&logo=github"
+    <img src="https://img.shields.io/badge/Report-a_Bug-f05d5e?style=flat-square&logo=github"
          alt="Report a Cosmic Relay bug">
   </a>
   <a href="https://github.com/Lordkoii/Cosmic-Relay/issues/new?template=qol_suggestion.yml">
-    <img src="https://img.shields.io/badge/Suggest-a-Feature-8a62ff?style=flat-square&logo=github"
+    <img src="https://img.shields.io/badge/Suggest-a_Feature-8a62ff?style=flat-square&logo=github"
          alt="Suggest a Cosmic Relay feature">
   </a>
   <a href="https://ko-fi.com/cosmicrelay">
