@@ -1,0 +1,41 @@
+Cosmic Relay — Third-Party Notices
+
+Cosmic Relay itself is proprietary software owned by Lordkoii. Official Windows
+binary releases may include third-party runtime and framework components that
+remain governed by their own licenses and notices.
+
+The following upstream projects are used by or distributed with current
+self-contained Cosmic Relay Windows builds.
+
+1. Microsoft .NET / Windows Desktop Runtime
+
+Cosmic Relay is built on .NET 8 and WPF. Self-contained Windows releases include
+.NET runtime, host, framework, and Windows Desktop components.
+
+Official .NET license information:
+https://github.com/dotnet/core/blob/main/license-information.md
+
+.NET Runtime license:
+https://github.com/dotnet/runtime/blob/main/LICENSE.TXT
+
+.NET Runtime third-party notices:
+https://github.com/dotnet/runtime/blob/main/THIRD-PARTY-NOTICES.TXT
+
+2. Microsoft C#/WinRT and Windows SDK .NET projections
+
+Current builds include Windows Runtime interop components such as WinRT.Runtime
+and Microsoft.Windows.SDK.NET used to access Windows media-session APIs.
+
+Upstream project:
+https://github.com/microsoft/CsWinRT
+
+Upstream license:
+https://github.com/microsoft/CsWinRT/blob/master/LICENSE
+
+Third-party component names and trademarks remain the property of their
+respective owners. Where an upstream license or notice conflicts with this
+summary, the upstream license or notice controls for that third-party component.
+
+This notice does not grant any additional rights to Cosmic Relay itself. Cosmic
+Relay remains subject to the separate Cosmic Relay Proprietary License included
+with the distribution.
