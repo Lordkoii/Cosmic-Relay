@@ -54,14 +54,19 @@ This public repository is the home for **tester downloads, release notes, bug re
 
 ## Current features
 
-- `AUTO` and `WEB` media-detection modes
-- YouTube and web-media playback detection
-- Compact in-game media overlay
-- Customizable layouts and appearance behavior
-- Movable overlay with anchored Settings window
-- Settings position/offset preservation while moving the overlay
-- Monitor-edge-aware window placement
-- System tray integration
+- Three overlay layouts: **Full**, **Flight**, and **Ghost**
+- `AUTO`, `SPOT`, and `WEB` source modes, plus optional pinning to a specific Windows media session
+- Spotify, YouTube, browser media, and other compatible Windows media-session playback detection
+- Album artwork with an optional **Show album artwork** preference
+- Track title, artist, playback state, progress timeline, and seeking when supported
+- Previous, play/pause, next, shuffle, and repeat controls when exposed by the active media session
+- Per-application volume and mute controls
+- Overlay scaling from 80% to 160%, adjustable background opacity, reduced motion, and configurable long-title marquee behavior
+- Click-through locking with a configurable global lock/unlock hotkey
+- Configurable global show/hide hotkey
+- Movable overlay with Settings-window anchoring, manual offset preservation, and monitor-edge-aware placement
+- System tray controls and optional **Launch with Windows**
+- **Copy Diagnostics** for media-session, capability, timeline, artwork, hotkey, and environment troubleshooting
 - Public alpha builds for Windows x64
 
 Cosmic Relay is still in active alpha development. Real-world tester feedback is helping determine which media services, usability improvements, and quality-of-life features are added next.
@@ -108,7 +113,7 @@ Digitally signed builds are planned for a future release.
 
 Feedback is one of the main reasons this public repository exists.
 
-**Found a bug?** Use the [Bug Report](https://github.com/Lordkoii/Cosmic-Relay/issues/new?template=bug_report.yml) form and include what you were doing, the media source/player, whether Cosmic Relay was using `AUTO` or `WEB`, reproduction steps, and screenshots when useful.
+**Found a bug?** Use the [Bug Report](https://github.com/Lordkoii/Cosmic-Relay/issues/new?template=bug_report.yml) form and include what you were doing, the media source/player, whether Cosmic Relay was using `AUTO`, `SPOT`, `WEB`, or a pinned session, reproduction steps, and screenshots when useful. **Copy Diagnostics** output is especially helpful for media-detection problems; review it before posting because it can include the current track title, artist, and raw Windows media-session identifier.
 
 **Have a QOL or feature idea?** Use the [QOL / Feature Suggestion](https://github.com/Lordkoii/Cosmic-Relay/issues/new?template=qol_suggestion.yml) form. Small usability ideas are especially valuable during alpha testing.
 
@@ -129,6 +134,8 @@ Cosmic Relay is **proprietary software**. It is not open source.
 Copyright © 2026 **Lordkoii**. All rights reserved.
 
 Tester builds are provided for personal, non-commercial evaluation and use under the terms in the repository's `LICENSE` file. Redistribution, resale, repackaging, or claiming Cosmic Relay as your own work is not permitted.
+
+Third-party components included with official builds remain subject to their respective licenses and notices. See `THIRD-PARTY-NOTICES.txt` where provided.
 
 ## Star Citizen disclaimer
 
