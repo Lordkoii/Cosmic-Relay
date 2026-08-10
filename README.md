@@ -27,11 +27,11 @@
 
 <p align="center">
   <a href="https://github.com/Lordkoii/Cosmic-Relay/issues/new?template=bug_report.yml">
-    <img src="https://img.shields.io/badge/Report-a_Bug-f05d5e?style=flat-square&logo=github"
+    <img src="https://img.shields.io/badge/Report-a-Bug-f05d5e?style=flat-square&logo=github"
          alt="Report a Cosmic Relay bug">
   </a>
   <a href="https://github.com/Lordkoii/Cosmic-Relay/issues/new?template=qol_suggestion.yml">
-    <img src="https://img.shields.io/badge/Suggest-a_Feature-8a62ff?style=flat-square&logo=github"
+    <img src="https://img.shields.io/badge/Suggest-a-Feature-8a62ff?style=flat-square&logo=github"
          alt="Suggest a Cosmic Relay feature">
   </a>
   <a href="https://ko-fi.com/cosmicrelay">
@@ -44,7 +44,11 @@
 
 ## About Cosmic Relay
 
-Cosmic Relay is an independent Star Citizen companion utility that displays currently playing media in a compact, customizable overlay while you stay in-game. It is designed to blend into a gameplay setup rather than pull you away from it every time you want to check what's playing.
+**Cosmic Relay is a lightweight, customizable in-game media overlay for Star Citizen — built to keep your currently playing media visible without pulling you out of the cockpit.**
+
+It runs externally on Windows and is designed to blend naturally into a Star Citizen setup while keeping media information and controls close at hand.
+
+> **Website:** `cosmicrelay.app` — **coming soon.** The domain is reserved for the future Cosmic Relay landing page but is not active yet.
 
 This public repository is the home for **tester downloads, release notes, bug reports, and quality-of-life feedback**. The application source code is maintained separately in a private repository and is **not distributed here**.
 
