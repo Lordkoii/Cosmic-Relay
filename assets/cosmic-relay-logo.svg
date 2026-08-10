@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Cosmic Relay CR logo</title>
+  <desc id="desc">A neon cyan and violet circular CR emblem on a deep-space background.</desc>
+  <defs>
+    <radialGradient id="space" cx="42%" cy="34%" r="72%">
+      <stop offset="0" stop-color="#17345d"/>
+      <stop offset="0.52" stop-color="#090f24"/>
+      <stop offset="1" stop-color="#030611"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#46e8ff"/>
+      <stop offset="0.52" stop-color="#18b9f4"/>
+      <stop offset="1" stop-color="#965dff"/>
+    </linearGradient>
+    <linearGradient id="letters" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#d7efff"/>
+      <stop offset="1" stop-color="#91b6e4"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <circle cx="256" cy="256" r="244" fill="url(#space)" stroke="url(#ring)" stroke-width="12"/>
+  <circle cx="256" cy="256" r="216" fill="none" stroke="#8adfff" stroke-opacity=".18" stroke-width="2"/>
+  <g fill="#b9ebff" opacity=".7">
+    <circle cx="112" cy="132" r="2"/><circle cx="171" cy="89" r="1.6"/><circle cx="368" cy="112" r="2"/>
+    <circle cx="407" cy="194" r="1.5"/><circle cx="95" cy="306" r="1.5"/><circle cx="384" cy="337" r="2"/>
+    <circle cx="160" cy="389" r="2"/><circle cx="315" cy="76" r="1.5"/><circle cx="427" cy="271" r="1.4"/>
+  </g>
+  <path d="M126 287c32-83 97-132 174-134 56-2 105 20 139 60" fill="none" stroke="#35dfff" stroke-width="9" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M386 224c16 55 5 110-29 149-30 35-74 57-123 57" fill="none" stroke="#8a62ff" stroke-width="8" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M128 314c13 39 39 71 74 92" fill="none" stroke="#228dff" stroke-width="7" stroke-linecap="round" filter="url(#glow)"/>
+  <g transform="translate(256 251)" fill="url(#letters)" stroke="#dff7ff" stroke-width="1.5" filter="url(#glow)">
+    <text x="-7" y="52" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="170" font-weight="900" letter-spacing="-20">CR</text>
+  </g>
+  <g transform="translate(383 111)" stroke="#dffcff" stroke-linecap="round" filter="url(#glow)">
+    <path d="M0-31V31M-31 0H31" stroke-width="6"/>
+    <path d="M-17-17L17 17M17-17L-17 17" stroke-width="3" opacity=".85"/>
+  </g>
+  <circle cx="383" cy="111" r="7" fill="#ffffff" filter="url(#glow)"/>
+</svg>
