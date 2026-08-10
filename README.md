@@ -106,12 +106,6 @@ If you enjoy the project and would like to help support continued development, c
 
 Support is completely optional — testing Cosmic Relay, reporting bugs, and sharing feedback are just as valuable.
 
-## Automatic release updates
-
-This page is wired to GitHub Releases. When a new Cosmic Relay release or prerelease is **published**, a GitHub Actions workflow updates the current-version display, Download button, release link, release asset filename, and SHA-256 verification value in this README.
-
-That means testers can return to this repository and use **Download Latest Build** without needing an old version-specific link.
-
 ## License and distribution
 
 Cosmic Relay is **proprietary software**. It is not open source.
