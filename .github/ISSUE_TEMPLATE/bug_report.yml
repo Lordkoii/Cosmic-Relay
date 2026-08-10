@@ -7,21 +7,25 @@ body:
     attributes:
       value: |
         Thanks for testing Cosmic Relay. Please include enough detail for the issue to be reproduced.
+
+        For media-detection or playback-control problems, **Copy Diagnostics** from Cosmic Relay Settings is especially helpful. Review diagnostics before posting because they can include the current track title, artist, and raw Windows media-session identifier.
   - type: input
     id: version
     attributes:
       label: Cosmic Relay version
-      description: Example: v0.7.0-alpha.3
-      placeholder: v0.7.0-alpha.3
+      description: Example: v0.7.0-alpha.4
+      placeholder: v0.7.0-alpha.4
     validations:
       required: true
   - type: dropdown
     id: media_mode
     attributes:
-      label: Media mode
+      label: Media source mode
       options:
         - AUTO
+        - SPOT
         - WEB
+        - Pinned media session
         - Other / Not sure
     validations:
       required: true
@@ -29,8 +33,8 @@ body:
     id: media_source
     attributes:
       label: Media source / player
-      description: Example: YouTube in Firefox, YouTube in Chrome, Spotify, etc.
-      placeholder: YouTube in Firefox
+      description: Example: Spotify, YouTube in Firefox, YouTube in Chrome, Apple Music, etc.
+      placeholder: Spotify
   - type: textarea
     id: description
     attributes:
@@ -45,10 +49,16 @@ body:
       placeholder: |
         1. Open Cosmic Relay
         2. Start playback in ...
-        3. Set Media Session to ...
+        3. Set Media Session / source mode to ...
         4. Observe ...
     validations:
       required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Cosmic Relay diagnostics
+      description: Paste Copy Diagnostics output here when relevant. Review it first because it may include track title, artist, and the raw Windows media-session identifier.
+      render: text
   - type: textarea
     id: environment
     attributes:
