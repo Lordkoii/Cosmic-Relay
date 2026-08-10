@@ -67,6 +67,16 @@ If something breaks, please open a **Bug Report** and include:
 
 If the app works but you think something could feel better, open a **QOL / Feature Suggestion**. Small usability ideas are especially useful during alpha testing.
 
+## ❤️ Support Cosmic Relay
+
+Cosmic Relay is developed and maintained independently as a free community project.
+
+If you enjoy the project and would like to help support continued development, contributions help cover **code signing, testing, release infrastructure, and future improvements**.
+
+**[Support Cosmic Relay on Ko-fi](https://ko-fi.com/cosmicrelay)**
+
+Support is completely optional — testing Cosmic Relay, reporting bugs, and sharing feedback are just as valuable.
+
 ## Version
 
 Current tester baseline: **v0.7.0-alpha.3 — Window Polish**
