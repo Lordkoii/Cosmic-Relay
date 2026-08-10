@@ -10,9 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/status-alpha-8a62ff?style=flat-square" alt="Alpha status">
-  <img src="https://img.shields.io/badge/platform-Windows_x64-14c8f5?style=flat-square&logo=windows11&logoColor=white" alt="Windows x64">
-  <img src="https://img.shields.io/badge/source-private-20283a?style=flat-square&logo=github&logoColor=white" alt="Private source">
+  <strong>Status:</strong> Alpha &nbsp;•&nbsp; <strong>Platform:</strong> Windows x64 &nbsp;•&nbsp; <strong>Source:</strong> Private
 </p>
 
 <!-- AUTO_HERO_RELEASE_START -->
