@@ -1,43 +1,55 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
   <title id="title">Cosmic Relay CR logo</title>
-  <desc id="desc">A neon cyan and violet circular CR emblem on a deep-space background.</desc>
+  <desc id="desc">Circular Cosmic Relay CR emblem matching the social-preview branding.</desc>
   <defs>
-    <radialGradient id="space" cx="42%" cy="34%" r="72%">
-      <stop offset="0" stop-color="#17345d"/>
-      <stop offset="0.52" stop-color="#090f24"/>
-      <stop offset="1" stop-color="#030611"/>
+    <radialGradient id="bg" cx="50%" cy="46%" r="58%">
+      <stop offset="0" stop-color="#0d1833"/>
+      <stop offset="0.68" stop-color="#080d1d"/>
+      <stop offset="1" stop-color="#02050c"/>
     </radialGradient>
-    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#46e8ff"/>
-      <stop offset="0.52" stop-color="#18b9f4"/>
-      <stop offset="1" stop-color="#965dff"/>
+    <linearGradient id="outer" x1="70" y1="55" x2="445" y2="458" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#31e7ff"/>
+      <stop offset="0.62" stop-color="#13bdf4"/>
+      <stop offset="1" stop-color="#675dff"/>
+    </linearGradient>
+    <linearGradient id="arc" x1="148" y1="159" x2="378" y2="369" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#32e8ff"/>
+      <stop offset="0.52" stop-color="#1d9eff"/>
+      <stop offset="1" stop-color="#a259ff"/>
     </linearGradient>
     <linearGradient id="letters" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#ffffff"/>
-      <stop offset="0.55" stop-color="#d7efff"/>
-      <stop offset="1" stop-color="#91b6e4"/>
+      <stop offset="0.58" stop-color="#e8f4ff"/>
+      <stop offset="1" stop-color="#9db8d8"/>
     </linearGradient>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <filter id="textShadow" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="8" stdDeviation="5" flood-color="#335f96" flood-opacity=".75"/>
+    </filter>
   </defs>
-  <circle cx="256" cy="256" r="244" fill="url(#space)" stroke="url(#ring)" stroke-width="12"/>
-  <circle cx="256" cy="256" r="216" fill="none" stroke="#8adfff" stroke-opacity=".18" stroke-width="2"/>
-  <g fill="#b9ebff" opacity=".7">
-    <circle cx="112" cy="132" r="2"/><circle cx="171" cy="89" r="1.6"/><circle cx="368" cy="112" r="2"/>
-    <circle cx="407" cy="194" r="1.5"/><circle cx="95" cy="306" r="1.5"/><circle cx="384" cy="337" r="2"/>
-    <circle cx="160" cy="389" r="2"/><circle cx="315" cy="76" r="1.5"/><circle cx="427" cy="271" r="1.4"/>
+
+  <circle cx="256" cy="256" r="238" fill="url(#bg)" stroke="url(#outer)" stroke-width="13"/>
+  <circle cx="256" cy="256" r="221" fill="none" stroke="#77deff" stroke-opacity=".16" stroke-width="2"/>
+
+  <g fill="#d6f6ff" opacity=".72">
+    <circle cx="150" cy="111" r="2.3"/><circle cx="181" cy="88" r="1.5"/><circle cx="337" cy="92" r="1.7"/>
+    <circle cx="400" cy="179" r="1.5"/><circle cx="106" cy="292" r="1.6"/><circle cx="369" cy="378" r="2.1"/>
+    <circle cx="184" cy="405" r="1.8"/><circle cx="418" cy="299" r="1.4"/><circle cx="129" cy="210" r="1.4"/>
   </g>
-  <path d="M126 287c32-83 97-132 174-134 56-2 105 20 139 60" fill="none" stroke="#35dfff" stroke-width="9" stroke-linecap="round" filter="url(#glow)"/>
-  <path d="M386 224c16 55 5 110-29 149-30 35-74 57-123 57" fill="none" stroke="#8a62ff" stroke-width="8" stroke-linecap="round" filter="url(#glow)"/>
-  <path d="M128 314c13 39 39 71 74 92" fill="none" stroke="#228dff" stroke-width="7" stroke-linecap="round" filter="url(#glow)"/>
-  <g transform="translate(256 251)" fill="url(#letters)" stroke="#dff7ff" stroke-width="1.5" filter="url(#glow)">
-    <text x="-7" y="52" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="170" font-weight="900" letter-spacing="-20">CR</text>
+
+  <path d="M143 272c21-75 81-123 153-123 44 0 82 14 113 40" fill="none" stroke="#43e6ff" stroke-width="10" stroke-linecap="round" filter="url(#softGlow)"/>
+  <path d="M410 204c9 26 11 52 7 79" fill="none" stroke="#45dcff" stroke-width="9" stroke-linecap="round" filter="url(#softGlow)"/>
+  <path d="M394 333c-24 49-71 82-127 87" fill="none" stroke="url(#arc)" stroke-width="10" stroke-linecap="round" filter="url(#softGlow)"/>
+  <path d="M176 392c-25-17-46-39-59-65" fill="none" stroke="#1e8fff" stroke-width="9" stroke-linecap="round" filter="url(#softGlow)"/>
+
+  <text x="255" y="306" text-anchor="middle" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="180" font-weight="900" letter-spacing="-18" fill="url(#letters)" filter="url(#textShadow)">CR</text>
+
+  <g transform="translate(381 105)" stroke="#f5ffff" stroke-linecap="round" filter="url(#softGlow)">
+    <path d="M0-34V34M-34 0H34" stroke-width="5"/>
+    <path d="M-18-18L18 18M18-18L-18 18" stroke-width="3" opacity=".9"/>
   </g>
-  <g transform="translate(383 111)" stroke="#dffcff" stroke-linecap="round" filter="url(#glow)">
-    <path d="M0-31V31M-31 0H31" stroke-width="6"/>
-    <path d="M-17-17L17 17M17-17L-17 17" stroke-width="3" opacity=".85"/>
-  </g>
-  <circle cx="383" cy="111" r="7" fill="#ffffff" filter="url(#glow)"/>
+  <circle cx="381" cy="105" r="6" fill="#ffffff" filter="url(#softGlow)"/>
 </svg>
