@@ -1,0 +1,33 @@
+name: Rebuild README banner
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild-banner:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Rebuild and verify exact banner
+        shell: bash
+        run: |
+          cat .github/banner-parts/part-* | base64 --decode > assets/cosmic-relay-banner.jpg
+          echo "6b20ae042766b1c19cf3f71bca316536910c473d487408332104637204be02f9  assets/cosmic-relay-banner.jpg" | sha256sum -c -
+
+      - name: Commit verified banner and remove staging files
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/cosmic-relay-banner.jpg
+          git rm -r .github/banner-parts
+          git commit -m "Install verified Cosmic Relay README banner"
+          git push
