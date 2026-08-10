@@ -1,33 +1,61 @@
-# Cosmic Relay
+<p align="center">
+  <img src="assets/cosmic-relay-logo.svg" width="190" alt="Cosmic Relay CR logo">
+</p>
 
-**A lightweight, customizable in-game media overlay built for Star Citizen.**
+<h1 align="center">COSMIC RELAY</h1>
 
-> **Current status:** Alpha testing  
-> **Current tester version:** `v0.7.0-alpha.3`
+<p align="center">
+  <strong>In-game media overlay for Star Citizen</strong><br>
+  Keep your currently playing media visible without leaving the cockpit.
+</p>
 
-Cosmic Relay is an unofficial Star Citizen companion utility designed to keep currently playing media visible in a compact overlay while you stay in-game. This public repository is used for **tester downloads, release notes, bug reports, and quality-of-life feedback**.
+<p align="center">
+  <img src="https://img.shields.io/badge/status-alpha-8a62ff?style=flat-square" alt="Alpha status">
+  <img src="https://img.shields.io/badge/platform-Windows_x64-14c8f5?style=flat-square&logo=windows11&logoColor=white" alt="Windows x64">
+  <img src="https://img.shields.io/badge/source-private-20283a?style=flat-square&logo=github&logoColor=white" alt="Private source">
+</p>
 
-The application source code is maintained separately in a private repository and is **not distributed here**.
+<!-- AUTO_HERO_RELEASE_START -->
+<p align="center">
+  <a href="https://github.com/Lordkoii/Cosmic-Relay/releases/tag/v0.7.0-alpha.3"><img src="https://img.shields.io/badge/Download-Latest_Build-14c8f5?style=for-the-badge&logo=github&logoColor=white" alt="Download latest build"></a>
+</p>
+<p align="center"><strong>Current tester build:</strong> <code>v0.7.0-alpha.3</code></p>
+<!-- AUTO_HERO_RELEASE_END -->
 
-## What Cosmic Relay does
+<p align="center">
+  <a href="https://github.com/Lordkoii/Cosmic-Relay/issues/new?template=bug_report.yml"><img src="https://img.shields.io/badge/Report-a_Bug-f05d5e?style=flat-square&logo=github" alt="Report a bug"></a>
+  <a href="https://github.com/Lordkoii/Cosmic-Relay/issues/new?template=qol_suggestion.yml"><img src="https://img.shields.io/badge/Suggest-a_Feature-8a62ff?style=flat-square&logo=github" alt="Suggest a feature"></a>
+  <a href="https://ko-fi.com/cosmicrelay"><img src="https://img.shields.io/badge/Support-on_Ko--fi-ff5e5b?style=flat-square&logo=kofi&logoColor=white" alt="Support Cosmic Relay on Ko-fi"></a>
+</p>
 
-Cosmic Relay provides a compact media overlay intended for use while playing **Star Citizen**, with customizable layouts and media-detection behavior designed to blend into your gameplay setup without forcing you to constantly leave the game to check what's playing.
+---
 
-Current testing areas include:
+## About Cosmic Relay
 
-- Media detection using `AUTO` and `WEB` modes
-- YouTube/media playback detection
-- Overlay positioning and movement
-- Settings window anchoring
-- Layout and appearance behavior
-- Multi-monitor/window-edge behavior
-- General usability and quality-of-life improvements
+Cosmic Relay is an independent Star Citizen companion utility that displays currently playing media in a compact, customizable overlay while you stay in-game. It is designed to blend into a gameplay setup rather than pull you away from it every time you want to check what's playing.
 
+This public repository is the home for **tester downloads, release notes, bug reports, and quality-of-life feedback**. The application source code is maintained separately in a private repository and is **not distributed here**.
+
+## Current features
+
+- `AUTO` and `WEB` media-detection modes
+- YouTube and web-media playback detection
+- Compact in-game media overlay
+- Customizable layouts and appearance behavior
+- Movable overlay with anchored Settings window
+- Settings position/offset preservation while moving the overlay
+- Monitor-edge-aware window placement
+- System tray integration
+- Public alpha builds for Windows x64
+
+Cosmic Relay is still in active alpha development. Real-world tester feedback is helping determine which media services, usability improvements, and quality-of-life features are added next.
+
+<!-- AUTO_RELEASE_START -->
 ## Download
 
-**v0.7.0-alpha.3 — Public Test Build is now available.**
+**Cosmic Relay v0.7.0-alpha.3 — Public Test Build is now available.**
 
-➡️ **[Download Cosmic Relay v0.7.0-alpha.3](https://github.com/Lordkoii/Cosmic-Relay/releases/tag/v0.7.0-alpha.3)**
+➡️ **[Open the current Cosmic Relay release](https://github.com/Lordkoii/Cosmic-Relay/releases/tag/v0.7.0-alpha.3)**
 
 Download `Cosmic-Relay-v0.7.0-alpha.3-win-x64.zip` from the release assets, extract the entire ZIP to a folder, and run `CosmicRelay.exe`.
 
@@ -37,9 +65,16 @@ Only download Cosmic Relay from releases published by **Lordkoii**.
 
 > Cosmic Relay is currently alpha software. Test builds may contain bugs or incomplete features. Because the application is not yet code-signed, Windows may display an unknown-publisher or security warning on some systems.
 
+### File verification
+
+SHA-256 for `Cosmic-Relay-v0.7.0-alpha.3-win-x64.zip`:
+
+`f701251eb6beb1021555f27128245788901b9a2378f5dbd6c84334f7e50471d6`
+<!-- AUTO_RELEASE_END -->
+
 ### Windows first launch
 
-Because current alpha builds are not yet digitally code-signed, Windows may mark the downloaded ZIP or application as coming from the Internet.
+Current alpha builds are not yet digitally code-signed, so Windows may mark the downloaded ZIP or application as coming from the Internet.
 
 For the smoothest first launch:
 
@@ -49,23 +84,17 @@ For the smoothest first launch:
 4. Extract the entire ZIP to a folder.
 5. Run `CosmicRelay.exe`.
 
-If Microsoft Defender SmartScreen displays **Windows protected your PC**, verify that you downloaded the file from the official **Lordkoii/Cosmic-Relay** release page and that the SHA-256 matches the value below. On systems where Windows offers the option, select **More info** and then **Run anyway**.
+If Microsoft Defender SmartScreen displays **Windows protected your PC**, verify that you downloaded the file from the official **Lordkoii/Cosmic-Relay** release page and that the SHA-256 matches the value above. On systems where Windows offers the option, select **More info** and then **Run anyway**.
 
-This first-launch step is temporary while Cosmic Relay remains unsigned. Digitally signed builds are planned for a future release.
+Digitally signed builds are planned for a future release.
 
 ## Help test Cosmic Relay
 
-Feedback is welcome and is one of the main reasons this repository exists.
+Feedback is one of the main reasons this public repository exists.
 
-If something breaks, please open a **Bug Report** and include:
+**Found a bug?** Use the [Bug Report](https://github.com/Lordkoii/Cosmic-Relay/issues/new?template=bug_report.yml) form and include what you were doing, the media source/player, whether Cosmic Relay was using `AUTO` or `WEB`, reproduction steps, and screenshots when useful.
 
-- What you were doing when the problem occurred
-- Which media source/player you were using
-- Whether Cosmic Relay was set to `AUTO` or `WEB`
-- Steps that reproduce the issue
-- Screenshots when useful
-
-If the app works but you think something could feel better, open a **QOL / Feature Suggestion**. Small usability ideas are especially useful during alpha testing.
+**Have a QOL or feature idea?** Use the [QOL / Feature Suggestion](https://github.com/Lordkoii/Cosmic-Relay/issues/new?template=qol_suggestion.yml) form. Small usability ideas are especially valuable during alpha testing.
 
 ## ❤️ Support Cosmic Relay
 
@@ -77,24 +106,11 @@ If you enjoy the project and would like to help support continued development, c
 
 Support is completely optional — testing Cosmic Relay, reporting bugs, and sharing feedback are just as valuable.
 
-## Version
+## Automatic release updates
 
-Current tester baseline: **v0.7.0-alpha.3 — Window Polish**
+This page is wired to GitHub Releases. When a new Cosmic Relay release or prerelease is **published**, a GitHub Actions workflow updates the current-version display, Download button, release link, release asset filename, and SHA-256 verification value in this README.
 
-Highlights:
-
-- Working `AUTO` / `WEB` media detection
-- Settings window anchors to the main overlay
-- Settings follows the overlay while preserving its relative position
-- Improved monitor-edge window placement
-- Corrected close-button alignment
-- Release-protection and application ownership metadata
-
-## File verification
-
-SHA-256 for `Cosmic-Relay-v0.7.0-alpha.3-win-x64.zip`:
-
-`f701251eb6beb1021555f27128245788901b9a2378f5dbd6c84334f7e50471d6`
+That means testers can return to this repository and use **Download Latest Build** without needing an old version-specific link.
 
 ## License and distribution
 
