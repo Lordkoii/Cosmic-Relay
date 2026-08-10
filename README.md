@@ -90,7 +90,7 @@ Only download Cosmic Relay from releases published by **Lordkoii**.
 
 SHA-256 for `CosmicRelay-v0.7.0-alpha.4-win-x64.zip`:
 
-`70313966c40cf39494ba79cdc80b702815101c1a9e50a09e529764c1b51ee262`
+`357ad56d8dce166a425d8a133bc2ed7a4111f6260cd605cc31cb5b158ccd4a5d`
 <!-- AUTO_RELEASE_END -->
 
 ### Windows first launch
