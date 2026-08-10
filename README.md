@@ -1,29 +1,43 @@
 <p align="center">
-  <img src="assets/cosmic-relay-social-logo.jpg" width="190" alt="Cosmic Relay CR logo">
-</p>
-
-<h1 align="center">COSMIC RELAY</h1>
-
-<p align="center">
-  <strong>In-game media overlay for Star Citizen</strong><br>
-  Keep your currently playing media visible without leaving the cockpit.
+  <img src="assets/cosmic-relay-banner.jpg"
+       alt="Cosmic Relay — In-game media overlay for Star Citizen"
+       width="100%">
 </p>
 
 <p align="center">
-  <strong>Status:</strong> Alpha &nbsp;•&nbsp; <strong>Platform:</strong> Windows x64 &nbsp;•&nbsp; <strong>Source:</strong> Private
+  <strong>Status:</strong> Alpha
+  &nbsp;•&nbsp;
+  <strong>Platform:</strong> Windows x64
+  &nbsp;•&nbsp;
+  <strong>Source:</strong> Private
 </p>
 
 <!-- AUTO_HERO_RELEASE_START -->
 <p align="center">
-  <a href="https://github.com/Lordkoii/Cosmic-Relay/releases/tag/v0.7.0-alpha.3"><img src="https://img.shields.io/badge/Download-Latest_Build-14c8f5?style=for-the-badge&logo=github&logoColor=white" alt="Download latest build"></a>
+  <a href="https://github.com/Lordkoii/Cosmic-Relay/releases/tag/v0.7.0-alpha.3">
+    <img src="https://img.shields.io/badge/Download-Latest_Build-14c8f5?style=for-the-badge&logo=github&logoColor=white"
+         alt="Download latest Cosmic Relay build">
+  </a>
 </p>
-<p align="center"><strong>Current tester build:</strong> <code>v0.7.0-alpha.3</code></p>
+
+<p align="center">
+  <strong>Current tester build:</strong> <code>v0.7.0-alpha.3</code>
+</p>
 <!-- AUTO_HERO_RELEASE_END -->
 
 <p align="center">
-  <a href="https://github.com/Lordkoii/Cosmic-Relay/issues/new?template=bug_report.yml"><img src="https://img.shields.io/badge/Report-a_Bug-f05d5e?style=flat-square&logo=github" alt="Report a bug"></a>
-  <a href="https://github.com/Lordkoii/Cosmic-Relay/issues/new?template=qol_suggestion.yml"><img src="https://img.shields.io/badge/Suggest-a_Feature-8a62ff?style=flat-square&logo=github" alt="Suggest a feature"></a>
-  <a href="https://ko-fi.com/cosmicrelay"><img src="https://img.shields.io/badge/Support-on_Ko--fi-ff5e5b?style=flat-square&logo=kofi&logoColor=white" alt="Support Cosmic Relay on Ko-fi"></a>
+  <a href="https://github.com/Lordkoii/Cosmic-Relay/issues/new?template=bug_report.yml">
+    <img src="https://img.shields.io/badge/Report-a_Bug-f05d5e?style=flat-square&logo=github"
+         alt="Report a Cosmic Relay bug">
+  </a>
+  <a href="https://github.com/Lordkoii/Cosmic-Relay/issues/new?template=qol_suggestion.yml">
+    <img src="https://img.shields.io/badge/Suggest-a_Feature-8a62ff?style=flat-square&logo=github"
+         alt="Suggest a Cosmic Relay feature">
+  </a>
+  <a href="https://ko-fi.com/cosmicrelay">
+    <img src="https://img.shields.io/badge/Support-on_Ko--fi-ff5e5b?style=flat-square&logo=kofi&logoColor=white"
+         alt="Support Cosmic Relay on Ko-fi">
+  </a>
 </p>
 
 ---
