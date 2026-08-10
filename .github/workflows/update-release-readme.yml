@@ -1,0 +1,123 @@
+name: Update README for published release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Update current release information
+        env:
+          EVENT_PATH: ${{ github.event_path }}
+        run: |
+          python3 <<'PY'
+          import hashlib
+          import json
+          import os
+          import pathlib
+          import urllib.request
+
+          event = json.loads(pathlib.Path(os.environ["EVENT_PATH"]).read_text(encoding="utf-8"))
+          release = event["release"]
+
+          tag = release["tag_name"]
+          title = release.get("name") or tag
+          release_url = release["html_url"]
+          assets = release.get("assets", [])
+
+          zip_assets = [a for a in assets if a.get("name", "").lower().endswith(".zip")]
+          asset = next((a for a in zip_assets if "win-x64" in a.get("name", "").lower()), None)
+          if asset is None and zip_assets:
+              asset = zip_assets[0]
+
+          asset_name = asset["name"] if asset else "the Windows x64 release asset"
+          checksum = "Not available"
+
+          if asset:
+              digest = hashlib.sha256()
+              request = urllib.request.Request(
+                  asset["browser_download_url"],
+                  headers={"User-Agent": "Cosmic-Relay-Release-Workflow"},
+              )
+              with urllib.request.urlopen(request) as response:
+                  while chunk := response.read(1024 * 1024):
+                      digest.update(chunk)
+              checksum = digest.hexdigest()
+
+          hero = f'''<!-- AUTO_HERO_RELEASE_START -->
+          <p align="center">
+            <a href="{release_url}"><img src="https://img.shields.io/badge/Download-Latest_Build-14c8f5?style=for-the-badge&logo=github&logoColor=white" alt="Download latest build"></a>
+          </p>
+          <p align="center"><strong>Current tester build:</strong> <code>{tag}</code></p>
+          <!-- AUTO_HERO_RELEASE_END -->'''
+
+          release_block = f'''<!-- AUTO_RELEASE_START -->
+          ## Download
+
+          **{title} is now available.**
+
+          ➡️ **[Open the current Cosmic Relay release]({release_url})**
+
+          Download `{asset_name}` from the release assets, extract the entire ZIP to a folder, and run `CosmicRelay.exe`.
+
+          This is a self-contained Windows x64 build, so a separate .NET installation should not be required.
+
+          Only download Cosmic Relay from releases published by **Lordkoii**.
+
+          > Cosmic Relay is currently alpha software. Test builds may contain bugs or incomplete features. Because the application is not yet code-signed, Windows may display an unknown-publisher or security warning on some systems.
+
+          ### File verification
+
+          SHA-256 for `{asset_name}`:
+
+          `{checksum}`
+          <!-- AUTO_RELEASE_END -->'''
+
+          readme_path = pathlib.Path("README.md")
+          text = readme_path.read_text(encoding="utf-8")
+
+          def replace_between(source, start_marker, end_marker, replacement):
+              start = source.find(start_marker)
+              end = source.find(end_marker)
+              if start == -1 or end == -1 or end < start:
+                  raise RuntimeError(f"README markers not found: {start_marker} / {end_marker}")
+              end += len(end_marker)
+              return source[:start] + replacement + source[end:]
+
+          text = replace_between(
+              text,
+              "<!-- AUTO_HERO_RELEASE_START -->",
+              "<!-- AUTO_HERO_RELEASE_END -->",
+              hero,
+          )
+          text = replace_between(
+              text,
+              "<!-- AUTO_RELEASE_START -->",
+              "<!-- AUTO_RELEASE_END -->",
+              release_block,
+          )
+
+          readme_path.write_text(text, encoding="utf-8")
+          PY
+
+      - name: Commit README update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "README is already current."
+            exit 0
+          fi
+          git commit -m "Update README for ${{ github.event.release.tag_name }}"
+          git pull --rebase origin main
+          git push origin main
