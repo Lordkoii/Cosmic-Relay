@@ -14,14 +14,14 @@
 
 <!-- AUTO_HERO_RELEASE_START -->
 <p align="center">
-  <a href="https://github.com/Lordkoii/Cosmic-Relay/releases/tag/v0.7.0-alpha.3">
+  <a href="https://github.com/Lordkoii/Cosmic-Relay/releases/tag/v0.7.0-alpha.4">
     <img src="https://img.shields.io/badge/Download-Latest_Build-14c8f5?style=for-the-badge&logo=github&logoColor=white"
          alt="Download latest Cosmic Relay build">
   </a>
 </p>
 
 <p align="center">
-  <strong>Current tester build:</strong> <code>v0.7.0-alpha.3</code>
+  <strong>Current tester build:</strong> <code>v0.7.0-alpha.4</code>
 </p>
 <!-- AUTO_HERO_RELEASE_END -->
 
@@ -69,11 +69,11 @@ Cosmic Relay is still in active alpha development. Real-world tester feedback is
 <!-- AUTO_RELEASE_START -->
 ## Download
 
-**Cosmic Relay v0.7.0-alpha.3 — Public Test Build is now available.**
+**Cosmic Relay v0.7.0-alpha.4 — QOL & Diagnostics is now available.**
 
-➡️ **[Open the current Cosmic Relay release](https://github.com/Lordkoii/Cosmic-Relay/releases/tag/v0.7.0-alpha.3)**
+➡️ **[Open the current Cosmic Relay release](https://github.com/Lordkoii/Cosmic-Relay/releases/tag/v0.7.0-alpha.4)**
 
-Download `Cosmic-Relay-v0.7.0-alpha.3-win-x64.zip` from the release assets, extract the entire ZIP to a folder, and run `CosmicRelay.exe`.
+Download `CosmicRelay-v0.7.0-alpha.4-win-x64.zip` from the release assets, extract the entire ZIP to a folder, and run `CosmicRelay.exe`.
 
 This is a self-contained Windows x64 build, so a separate .NET installation should not be required.
 
@@ -83,9 +83,9 @@ Only download Cosmic Relay from releases published by **Lordkoii**.
 
 ### File verification
 
-SHA-256 for `Cosmic-Relay-v0.7.0-alpha.3-win-x64.zip`:
+SHA-256 for `CosmicRelay-v0.7.0-alpha.4-win-x64.zip`:
 
-`f701251eb6beb1021555f27128245788901b9a2378f5dbd6c84334f7e50471d6`
+`70313966c40cf39494ba79cdc80b702815101c1a9e50a09e529764c1b51ee262`
 <!-- AUTO_RELEASE_END -->
 
 ### Windows first launch
