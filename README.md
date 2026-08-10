@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/cosmic-relay-social-logo.svg" width="190" alt="Cosmic Relay CR logo">
+  <img src="assets/cosmic-relay-social-logo.png" width="190" alt="Cosmic Relay CR logo">
 </p>
 
 <h1 align="center">COSMIC RELAY</h1>
