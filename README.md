@@ -34,9 +34,9 @@
     <img src="https://img.shields.io/badge/Suggest-a_Feature-8a62ff?style=flat-square&logo=github"
          alt="Suggest a Cosmic Relay feature">
   </a>
-  <a href="https://ko-fi.com/cosmicrelay">
-    <img src="https://img.shields.io/badge/Support-on_Ko--fi-ff5e5b?style=flat-square&logo=kofi&logoColor=white"
-         alt="Support Cosmic Relay on Ko-fi">
+  <a href="https://ko-fi.com/cosmicutilities">
+    <img src="https://img.shields.io/badge/Support-Cosmic_Utilities-ff5e5b?style=flat-square&logo=kofi&logoColor=white"
+         alt="Support Cosmic Utilities on Ko-fi">
   </a>
 </p>
 
@@ -117,15 +117,15 @@ Feedback is one of the main reasons this public repository exists.
 
 **Have a QOL or feature idea?** Use the [QOL / Feature Suggestion](https://github.com/Lordkoii/Cosmic-Relay/issues/new?template=qol_suggestion.yml) form. Small usability ideas are especially valuable during alpha testing.
 
-## ❤️ Support Cosmic Relay
+## ❤️ Support Cosmic Relay & Cosmic Pulse
 
-Cosmic Relay is developed and maintained independently as a free community project.
+Cosmic Relay and Cosmic Pulse are independently developed as part of the **Cosmic Utilities** family—free community tools built for Star Citizen players.
 
-If you enjoy the project and would like to help support continued development, contributions help cover **code signing, testing, release infrastructure, and future improvements**.
+If either project is useful to you and you would like to support continued development, contributions help cover **code signing, testing, release infrastructure, and future improvements across both applications**.
 
-**[Support Cosmic Relay on Ko-fi](https://ko-fi.com/cosmicrelay)**
+**[Support Cosmic Utilities on Ko-fi](https://ko-fi.com/cosmicutilities)**
 
-Support is completely optional — testing Cosmic Relay, reporting bugs, and sharing feedback are just as valuable.
+Support is completely optional—testing builds, reporting bugs, and sharing feedback are just as valuable.
 
 ## License and distribution
 
