@@ -9,6 +9,8 @@ body:
         Thanks for testing Cosmic Relay. Please include enough detail for the issue to be reproduced.
 
         For media-detection or playback-control problems, **Copy Diagnostics** from Cosmic Relay Settings is especially helpful. Review diagnostics before posting because they can include the current track title, artist, and raw Windows media-session identifier.
+
+        Do not include account credentials, authentication tokens, personally identifying information, or unrelated private logs.
   - type: input
     id: version
     attributes:
