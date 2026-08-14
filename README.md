@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/cosmic-relay-banner.jpg"
+  <img src="assets/cosmic-relay-banner.gif"
        alt="Cosmic Relay — In-game media overlay for Star Citizen"
        width="100%">
 </p>
