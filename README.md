@@ -117,15 +117,41 @@ Feedback is one of the main reasons this public repository exists.
 
 **Have a QOL or feature idea?** Use the [QOL / Feature Suggestion](https://github.com/Lordkoii/Cosmic-Relay/issues/new?template=qol_suggestion.yml) form. Small usability ideas are especially valuable during alpha testing.
 
+## Safety & privacy
+
+Cosmic Relay is designed as an **external companion application**.
+
+It does not intend to:
+
+- inject DLLs or code into Star Citizen
+- read Star Citizen process memory
+- intercept or manipulate game/network traffic
+- automate keyboard, mouse, or gameplay actions
+- modify Star Citizen client files
+
+Cosmic Relay reads compatible Windows media-session information so it can display playback details and expose supported media controls.
+
+**Local-first:** preferences and diagnostics remain on the user's PC unless the user explicitly copies or shares them. Diagnostics should be reviewed before posting because they may include the current track title, artist, and raw Windows media-session identifier.
+
+## Security
+
+Security-sensitive findings should **not** be reported through a public issue.
+
+Please review [`SECURITY.md`](SECURITY.md) for the private-reporting process, supported-version guidance, scope, and privacy expectations for security reports.
+
 ## License and distribution
 
 Cosmic Relay is **proprietary software**. It is not open source.
 
 Copyright © 2026 **Lordkoii**. All rights reserved.
 
-Tester builds are provided for personal, non-commercial evaluation and use under the terms in the repository's `LICENSE` file. Redistribution, resale, repackaging, or claiming Cosmic Relay as your own work is not permitted.
+Official compiled releases may be downloaded, installed, and used for personal, non-commercial evaluation and personal use under the terms in [`LICENSE`](LICENSE).
 
-Third-party components included with official builds remain subject to their respective licenses and notices. See `THIRD-PARTY-NOTICES.txt` where provided.
+The application source code is maintained privately and is not licensed for public reuse, modification, or redistribution.
+
+Redistribution, resale, repackaging, rebranding, or claiming Cosmic Relay as your own work is not permitted.
+
+Third-party components included with official builds remain subject to their respective licenses and notices. See [`THIRD-PARTY-NOTICES.txt`](THIRD-PARTY-NOTICES.txt) where provided.
 
 ## Star Citizen disclaimer
 
@@ -133,6 +159,6 @@ Cosmic Relay is an independent, unofficial fan-made utility and is not affiliate
 
 ## Creator
 
-**Lordkoii**
+Created and maintained by **Lordkoii**.
 
 Thanks for testing Cosmic Relay and helping shape what comes next.
